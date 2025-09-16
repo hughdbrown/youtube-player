@@ -1,0 +1,14 @@
+[package]
+name = "youtube-player"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+yew = {version="0.21.0", features = ["csr"]}
+ycl = { git = "https://github.com/brooks-builds/ycl", rev = "ae4e3ed" }
+yew-router = "0.18.0"
+wasm-bindgen = "0.2.101"
+wasm-bindgen-futures = "0.4.51"
+
+[profile.dev.package.wasm-bindgen]
+debug-assertions = false
